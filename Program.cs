@@ -45,9 +45,37 @@
             //Int32.TryParse(Console.ReadLine(), out age);
             //Console.WriteLine("Did you know in 5 years you will be " + (age + 5) + " Years old?"); 
             //Console.WriteLine("And 5 years ago you were " + (age - 5) + "! Imagine that!");
+
+
+            //int number1; 
+            //double number2, number3;
+            //Console.WriteLine("Hey give me a number");
+            //Int32.TryParse(Console.ReadLine(), out number1);
+            //Console.WriteLine("Give me another number");
+            //double.TryParse(Console.ReadLine(), out number2);
+            //Console.WriteLine("Give me one more number");
+            //double.TryParse(Console.ReadLine(), out number3);
+            //double num;
+            //num = number1 + number2 + number3;
+            //Console.WriteLine("The dumb calculator result is: " + (num / 2));
+
+
+            string item1, item2;
+            double totalPrice, discount, tax, subTotal, price1, price2; 
+            Console.WriteLine("Sales Recipt"); 
+            Console.WriteLine("What is item 1:");
+            item1 = Console.ReadLine();
+            Console.WriteLine("What is the price of " + item1); 
+            double.TryParse(Console.ReadLine(), out price1);
+            Console.WriteLine("What is item 2:");
+            item2 = Console.ReadLine();
+            Console.WriteLine("What is the price of " + item2);
+            double.TryParse(Console.ReadLine(), out price2);
+
+            totalPrice = price1 + price2;
+            double.TryParse(Console.ReadLine(), out totalPrice);
+            Console.WriteLine("Total: " + totalPrice);
             
-
-
         }
     }
 }
